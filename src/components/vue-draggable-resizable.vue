@@ -849,10 +849,6 @@ export default {
       }
     },
     x (val) {
-      if (this.resizing || this.dragging) {
-        return
-      }
-
       if (this.parent) {
         this.bounds = this.calcDragLimits()
       }
@@ -878,10 +874,6 @@ export default {
       }
     },
     w (val) {
-      if (this.resizing || this.dragging) {
-        return
-      }
-
       if (this.parent) {
         this.bounds = this.calcResizeLimits()
       }
